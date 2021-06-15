@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+#menu {
+    font-size: 150%;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1% 0;
+    font-weight:bold;
+    display: flex;
+    justify-content: space-around;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+#menu a:hover {
+    background: -webkit-linear-gradient(right, rgb(255, 0, 0), rgb(169, 83, 219));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgb(185, 231, 180);
+}
+#menu p {
+    width: 30%;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+}
+#content {
+    color: white;
+}
+.part {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+}
+#sneakerImage {
+    width: 35%;
+    border-radius: 25px;
+}
+#sneakerName {
+    font-size: 220%;
+    margin-bottom: 5%;
+    padding: 3% 3%;
+}
+#sneakerBrand {
+    font-size: 220%;
+}
+#sneakerDesc {
+    width: 65%;
+    font-size: 130%;
+    margin-bottom: 2%;
+}
+#sneakerPrice {
+    font-size: 180%;
+    margin-bottom: 15%;
+}
+button {
+    font-size: 115%;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 0.2% 1%;
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.glitch {
+    text-shadow: 0.05em 0 0 red, -0.025em -0.05em 0 green, 0.025em 0.05em 0 blue;
+    animation: glitch 2000ms infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 red, -0.05em -0.025em 0 green, -0.025em 0.05em 0 blue;
+    }
+    14% {
+        text-shadow: -0.05em 0.9 0 red, -0.05em -0.025em 0 green, -0.025em 0.05em 0 blue;
+    }
+    15% {
+        text-shadow: 0.05em 0 0 red, 0.025em -0.0325em 0 green, 0.05em -0.025em 0 blue;
+    }
+    49% {
+        text-shadow: -0.05em 0 0 red, 0.025em 0.0325em 0 green, -0.05em -0.025em 0 blue;
+    }
+    50% {
+        text-shadow: 0.0525em 0.05 0 red, 0.05em 0 0 green, 0.032 -0.05em 0 blue;
+    }
+    99% {
+        text-shadow: 0.0525em 0.05 0 red, 0.05em 0 0 green, 0.032 -0.05em 0 blue;
+    }
+    100% {
+        text-shadow: -0.05em 0.05em 0 red, -0.025em -0.025em 0 green, -0.05em 0.05em 0 blue;
+    }
+}
+
